@@ -1,0 +1,15 @@
+h1,h2{
+    color: blueviolet;
+}
+.first>p{
+    color: brown;
+}
+.first li{
+    color: blue;
+}
+li.seagreen{
+    color: seagreen;
+}
+ul p{
+    font-size: 1.5rem
+}
