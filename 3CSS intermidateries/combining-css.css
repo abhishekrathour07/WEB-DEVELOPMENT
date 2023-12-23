@@ -1,15 +1,20 @@
+/* grouping selectors */
 h1,h2{
     color: blueviolet;
 }
+/* child selector one level means parent to child*/
 .first>p{
     color: brown;
 }
+/* Decendant selectors many level  parent to grand child */
 .first li{
     color: blue;
 }
+/* chaining selectors */
 li.seagreen{
     color: seagreen;
 }
+/* combination means targeting different tag together */
 ul p{
     font-size: 1.5rem
 }

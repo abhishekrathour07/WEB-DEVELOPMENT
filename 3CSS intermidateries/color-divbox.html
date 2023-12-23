@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        #outer-box{
+            width: 700px;
+            background-color: blue;
+            border: 10px solid blueviolet;
+            margin: 30px 80px;
+            border-style: groove;
+        }
+        p{
+            color: yellow;
+            margin: 10px;
+            padding: 5px;
+        }
+        p.white-text{
+            margin: 20px;
+            color: white;
+            background-color: red;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer-box" class="box">
+        <div class="box">
+            <p>Yellow Text</p>
+            <div class="box inner-box">
+                <p class="white-text">White text</p>
+            </div>
+        </div>
+        <div clas="box">
+            <p>Yellow Text</p>
+            <div class="box inner-box">
+                <p class="white-text">White text</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
