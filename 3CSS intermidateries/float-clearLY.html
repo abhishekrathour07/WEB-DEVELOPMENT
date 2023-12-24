@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <Title>float and clear layout</Title>
+    <style>
+        .lambo {
+            color: salmon;
+            background-color: darkseagreen;
+            display: inline-block;
+            height: 330px;
+            width: 500px;
+        }
+
+        img {
+            float: left;
+        }
+
+        footer {
+            clear: both;
+            background-color: brown;
+            text-align: center;
+        }
+
+        .audi {
+            background-color: blueviolet;
+            display: inline-block;
+            height: 330px;
+            width: 500px;
+            position: absolute;
+            left: 67%;
+        }
+
+        .audi>img {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lambo">
+        <img src="https://scx2.b-cdn.net/gfx/news/2022/luxury-carmaker-lambor.jpg" alt="Lambo image" height="200px"
+            width="250px">
+        <p>an Italian manufacturing magnate, founded Automobili Ferruccio Lamborghini S.p.A. in 1963 to compete with
+            Ferrari. The company was noted for using a rear mid-engine, rear-wheel drive layout. Lamborghini grew
+            rapidly during its first decade, but sales plunged in the wake of the 1973 worldwide financial downturn and
+            the oil crisis. The firm's ownership changed three times after 1973, including a bankruptcy in 1978.
+            American Chrysler Corporation took control of Lamborghini in 1987 and sold it to Malaysian investment group
+            Mycom Setdco and Indonesian group V'Power Corporation in 1994. In 1998, Mycom Setdco and V'Power sold
+            Lamborghini to the Volkswagen Group where it was placed under the control of the group's Audi division.</p>
+        </div>
+        
+        <div class="audi">
+            <img src="https://blog.crisscrosstamizh.in/wp-content/uploads/2022/05/A-brief-history-of-Audi-Luxury-Vehicle-1024x533.jpg"
+            alt="audi" height="200px" width="250px">
+            <P>
+                Audi AG is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt, Bavaria,
+                Germany. A subsidiary of the Volkswagen Group, Audi produces vehicles in nine production facilities
+                worldwide.
+                
+                The origins of the company are complex, dating back to the early 20th century and the initial enterprises
+                (Horch and the Audiwerke) founded by engineer August Horch . Two other manufacturers (DKW and Wanderer) also
+                contributed to the foundation of Auto Union in 1932. The modern Audi era began in the 1960s, when Auto Union
+                was acquired by Volkswagen from Daimler-Benz.[9] After relaunching the Audi brand with the 1965 introduction
+                of the Audi F103 series, Volkswagen merged Auto Union with 
+            </P>
+        </div>
+        <footer>abhishek singh rathour</footer>
+</body>
+
+</html>
