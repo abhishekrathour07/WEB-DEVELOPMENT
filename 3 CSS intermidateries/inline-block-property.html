@@ -5,42 +5,38 @@
     <meta charset="UTF-8">
     <title>INline and block display property</title>
     <style>
-        .red {
-            display: inline-block;
-            height: 200px;
-            width: 300px;
-            background-color: rgb(208, 38, 38);
-          
-        }
-        .blue {
-            display: inline-block;
-            height: 200px;
-            width: 300px;
+        span.a{
             background-color: blueviolet;
+            display: inline;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
         }
-        .green {
+        span.b{
+            background-color: blueviolet;
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+        span.c{
+            background-color: aquamarine;
             display: inline-block;
-            height: 200px;
-            width: 300px;
-            background-color: green;
-        }
-
-        p {
-            color: white;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
         }
     </style>
 </head>
 
 <body>
-    <div class="red">
-        <p>RED</p>
-    </div>
-    <div class="blue">
-        <P>BLUE</P>
-    </div>
-    <div class="green">
-        <P>GREEN</P>
-    </div>
+  <h1>inline block property</h1>
+  <h2>Inline property</h2>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates modi, reiciendis, rem odio architecto possimus vel voluptatem hic consectetur sunt sint ,<span class="a">hello</span><span class="a">World</span> dicta quae illo deserunt, natus repudiandae exercitationem velit.</div>   
+  <h2>Block property</h2>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates modi, reiciendis, rem odio architecto possimus vel voluptatem hic consectetur sunt sint ,<span class="b">hello</span><span class="b">World</span> dicta quae illo deserunt, natus repudiandae exercitationem velit.</div>
+  <h2>inline-Block property</h2>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates modi, reiciendis, rem odio architecto possimus vel voluptatem hic consectetur sunt sint ,<span class="c">hello</span><span class="c">World</span> dicta quae illo deserunt, natus repudiandae exercitationem velit.</div>    
 </body>
 
 </html>

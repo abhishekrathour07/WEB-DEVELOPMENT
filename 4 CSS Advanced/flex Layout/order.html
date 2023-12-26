@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex direction</title>
+    <style>
+        .main {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            border: 5px solid black;
+            
+        }
+
+        .main>* {
+            flex-basis: 100px;
+        }
+
+        .red {
+            background-color: red;
+            order: 1;
+        }
+
+        .ORANGE {
+            background-color: orange;
+            order: 2;
+        }
+
+        .YELLOW {
+            background-color: yellow;
+            order: 4;
+        }
+
+        .BLUE {
+            background-color: blue;
+            order: 3;
+        }
+
+        .GREEN {
+            background-color: green;
+            order: 5;
+        }
+
+        .VOILET {
+            background-color: violet;
+            order: 7;
+        }
+
+        .INDIGO {
+            background-color: indigo;
+            order: 6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="red">RED</div>
+        <div class="ORANGE">ORANGE</div>
+        <div class="YELLOW">YELLOW</div>
+        <div class="BLUE">BLUE</div>
+        <div class="GREEN">GREEN</div>
+        <div class="VOILET">VOILET</div>
+        <div class="INDIGO">INDIGO</div>
+    </div>
+</body>
+
+</html>
