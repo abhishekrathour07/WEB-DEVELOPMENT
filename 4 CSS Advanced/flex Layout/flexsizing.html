@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            border: 5px solid rgb(11, 11, 105);
+            justify-content: space-between;
+        }
+
+        .item1 {
+            border: 3px solid green;
+            flex-basis: 400px;
+            flex-shrink: 1;
+        }
+
+        .item2 {
+            flex-basis: 200px;
+            border: 3px solid aquamarine;
+            flex-grow: 1;
+        }
+
+        .item3 {
+            border: 3px solid green;
+            flex-shrink: 0;
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+
+</body>
+
+</html>
+<!-- in shorthand 
+flex =    1   , 1 ,   0    
+       shrink grow  basis-->
