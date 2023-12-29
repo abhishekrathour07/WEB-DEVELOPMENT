@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Sizing</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-template-columns: auto 400px minmax(200px, 400px);
+
+        }
+
+        .child {
+            background-color: rgb(139, 46, 75);
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid Sizing Exercise</h1>
+    <div class="parent">
+        <div class="child">width expands to fill space</div>
+        <div class="child">400px wide</div>
+        <div class="child">min 200px max 500px wide</div>
+        <div class="child">width expands to fill space</div>
+        <div class="child">400px wide</div>
+        <div class="child">min 200px max 500px wide</div>
+        <div class="child">width expands to fill space</div>
+        <div class="child">400px wide</div>
+        <div class="child">min 200px max 500px wide</div>
+        <div class="child">50px high</div>
+    </div>
+</body>
+
+</html>
+<!-- grid are :- fixed ,auto,fraction,repeat,minmAX -->
