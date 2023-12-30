@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Painting</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            height: 100vh;
+
+
+        }
+
+        .container {
+            height: 748px;
+            width: 748px;
+            display: grid;
+            grid-template-columns: 320px 198px 153px 50px;
+            grid-template-rows: 414px 130px 155px 22px;
+            gap: 9px;
+            background-color: #000;
+
+        }
+
+        .box {
+            background-color: #f0f1ec;
+        }
+
+        .item1 {
+            background-color: red;
+        }
+
+        .item2 {
+            grid-column: 3 span;
+        }
+
+        .item3 {
+            height: 294px;
+        }
+        
+        .item4 {
+            height: 294px;
+            grid-column: 2 span;
+        }
+        .item5{
+            background-color: rgb(9, 9, 123);
+        }
+        .item9{
+            background-color: #ffffff;
+            grid-row: 2 span;
+        }
+        .item11{
+            background-color: gold;
+        }
+        .item12{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box item1"></div>
+        <div class="box item2"></div>
+        <div class="box item3"></div>
+        <div class="box item4"></div>
+        <div class="box item5"></div>
+        <div class="box item6"></div>
+        <div class="box item7"></div>
+        <div class="box item8"></div>
+        <div class="box item9"></div>
+        <div class="box item10"></div>
+        <div class="box item11"></div>
+        <div class="box item12"></div>
+    </div>
+
+</body>
+
+</html>

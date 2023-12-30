@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            height: 770px;
+            width: 400px;
+            border-radius: 20px;
+            border: 5px solid #CE5A67;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 110px 110px 110px 110px 110px 110px;
+        }
+
+        .box {
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 38px;
+
+        }
+
+        .item1 {
+            background-color: aliceblue;
+            grid-column: 4 span;
+            grid-row: 2 span;
+            border-radius: 20px;
+            font-size: 100px;
+            justify-content: end;
+            align-items: end;
+
+        }
+        .item2{
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+
+        .item18 {
+            background-color: aliceblue;
+            border-radius: 54px;
+            grid-row: 4 span;
+            background-color: #CE5A67;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box item1">0</div>
+        <div class="box item2">+</div>
+        <div class="box item2">-</div>
+        <div class="box item2">x</div>
+        <div class="box item2">/</div>
+        <div class="box item2">7</div>
+        <div class="box item2">8</div>
+        <div class="box item2">9</div>
+        <div class="box item18">=</div>
+        <div class="box item2">4</div>
+        <div class="box item2">5</div>
+        <div class="box item2">6</div>
+        <div class="box item2">1</div>
+        <div class="box item2">2</div>
+        <div class="box item2">3</div>
+        <div class="box item2">0</div>
+        <div class="box item2">.</div>
+        <div class="box item2">AC</div>
+    </div>
+
+</body>
+
+</html>

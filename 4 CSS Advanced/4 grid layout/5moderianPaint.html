@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice painting</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+
+        .container {
+            height: 720px;
+            width: 665px;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 180px 200px 180px 60px;
+            background-color: black;
+            grid-template-rows: 180px 200px 180px;
+        }
+
+        .item {
+            background-color: #f0f1ec;
+        }
+
+        .red {
+            background-color: red;
+            grid-column: 3 span;
+            grid-row: 2 span;
+        }
+
+        .yellow {
+            background-color: gold;
+        }
+
+        .white3 {
+            grid-row: 2 span;
+            background-color: rgb(14, 14, 108);
+        }
+
+        .white4 {
+            grid-column: 2 span;
+            grid-row: 2 span;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item white1"></div>
+        <div class="item red"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item white4"></div>
+        <div class="item"></div>
+        <div class="item yellow"></div>
+
+    </div>
+
+</body>
+
+</html>
