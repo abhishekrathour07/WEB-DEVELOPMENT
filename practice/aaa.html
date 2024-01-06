@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(153, 20, 20);
+            gap: 12px;
+            
+        }
+        .container {
+            width: 774px;
+            height: 700px;
+            display: grid;
+            grid-template-columns: 150px 150px 150px 150px;
+            grid-template-rows: 150px 150px 60px 30px;
+            background-color: rgb(11, 7, 7);
+            gap: 12px;
+            
+        }
+
+        .item {
+            background-color: aquamarine;
+            display: grid;
+            justify-content: start;
+            align-items: center;
+          
+        }
+
+        .one {
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        
+
+        .three {
+            display: grid;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .four {
+            justify-content: center;
+            align-items: end;
+        }
+        .con2{
+            display: flex;
+            width: 400px;
+            height: 60px;
+            background-color: blueviolet;
+            justify-content: center;
+            gap: 3px;
+        }
+        .items{
+            background-color: yellow;
+            width: 400px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item one">Hello</div>
+        <div class="item two">Abhishek</div>
+        <div class="item three ">Singh</div>
+        <div class="item four">Rathour</div>
+        <div class="con2">
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+        </div>
+    </div>
+</body>
+
+</html>

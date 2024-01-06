@@ -4,29 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>website</title>
+    <style>
+       .main {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.logoimg {
+    height: 60px;
+    display: block;
+}
+
+img {
+    height: 250px;
+    width: 400px;
+    float: left;
+}
+
+h1 {
+    font-size: 94px;
+    font-family: sans-serif;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+.creative {
+    color: blueviolet;
+}
+
+h2 {
+    font-size: 40px;
+    color: blueviolet;
+}
+
+.first {
+    display: inline-block;
+    width: 100%; 
+    margin-top: 20px; 
+    margin-left: 0; 
+    vertical-align: top;
+}
+
+@media screen and (min-width: 600px) {
+    .first {
+        width: 48%; 
+        margin-right: 2%; 
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .first {
+        width: 30%; 
+        margin-right: 2%; 
+    }
+}
+
+    </style>
 </head>
 
 <body>
     <div class="main">
-        <img class="logo" src="./assets/images/logo.png" alt="logo image">
+        <img class="logoimg" src="./assets/images/logo.png" alt="logo image">
         <h1>Creating a <span class="creative">Beautiful</span> <br />Design</h1>
-        <div class="second"><img src="./assets/images/beautiful.jpg" alt="Beautiful image">
+        <div class="first">
+            <img src="./assets/images/beautiful.jpg" alt="Beautiful image">
             <h2>Beautiful Nature</h2>
             <p>We strive to create the most beautiful websites for all your needs. Working closely with you to
                 design and
                 develop an amazing website for your business.</p>
 
         </div>
-        <div class="third"><img src="./assets/images/construction.jpg" alt="construction">
+        <div class="first"><img src="./assets/images/construction.jpg" alt="construction">
             <h2>Construction</h2>
             <p>Built by our team of professional developers, we ensure the most rigourous and modern websites. Built
                 from
                 scratch using HTML and CSS. Only the best for you.</p>
 
         </div>
-        <div class="fourth">
+        <div class="first">
             <img src="./assets/images/home.png" alt="home">
             <h2>Home</h2>
             <p>How the people love their home how they intract
@@ -34,7 +92,7 @@
                 is alaways be remembered and loveable
             </p>
         </div>
-        <div class="fifth">
+        <div class="first">
             <img src="./assets/images/carimage.png" alt="Cars">
             <h2>Cars Collections</h2>
             <p>Someone is just crazy about the cars and love the long ride
