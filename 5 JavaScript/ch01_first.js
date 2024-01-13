@@ -5,7 +5,8 @@ console.log(a)
 // prompt(a);git 
 a = 20;
 console.log(a)
-b= null;
+var b = null;
 console.log(b)
- var c;
+var c;
 console.log(c);
+
