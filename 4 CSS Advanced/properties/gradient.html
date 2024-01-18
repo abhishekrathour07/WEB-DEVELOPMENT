@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gradient property</title>
+</head>
+<style>
+  .radial-linear-conical {
+    height: 400px;
+    background-color: aliceblue;
+    display: flex;
+    gap: 20px;
+
+  }
+
+  .item1 {
+    height: 300px;
+    width: 400px;
+    background: linear-gradient(to right, rgb(182, 35, 35), rgb(100, 28, 215), rgb(48, 149, 161));
+    text-align: center;
+
+  }
+
+  .item1:hover {
+    box-shadow: inset 0 -3em 3em rgb(0 200 0 / 30%),
+    0 0 0 2px white , 0.3em 0.7em 3em red;
+  }
+
+  .item2 {
+    height: 300px;
+    width: 400px;
+    background: radial-gradient(rgba(111, 14, 14, 0.772), rgb(100, 28, 215), rgb(7, 84, 92));
+    text-align: center;
+
+  }
+  .item2:hover {
+      box-shadow: 2px 0px 50px rgb(166, 205, 12);
+  }
+
+  .item3 {
+    height: 300px;
+    width: 400px;
+    background: conic-gradient(rgba(111, 14, 14, 0.772), rgb(95, 9, 232), rgb(189, 152, 30));
+    text-align: center;
+
+  }
+</style>
+
+<body>
+  <div class="radial-linear-conical">
+    <div class="item1">linear</div>
+    <div class="item2">radial:- Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tenetur distinctio illum
+      doloremque aperiam, officia cupiditate nisi labore molestias consequuntur fugiat at repellendus quaerat, atque
+      repudiandae, laudantium quos velit sequi magni libero ab dolorem. Exercitationem quia natus commodi unde. Alias!
+    </div>
+    <div class="item3">conic</div>
+  </div>
+
+</body>
+
+</html>

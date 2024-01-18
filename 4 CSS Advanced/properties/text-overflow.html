@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text Overflow</title>
+    <style>
+        .item1 {
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        .item2 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: hidden;
+            text-overflow: ellipse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is </h1>
+    <div class="item1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorum quis nisi quisquam saepe quam ex
+            quod, iste eos voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum temporibus voluptatem consectetur, hic commodi qui culpa exercitationem sunt nihil quisquam. Iure error animi sit saepe officiis repellat dolor est vero?</p>
+    </div>
+    <div class="item2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla nihil accusamus ab expedita temporibus
+            officia deleniti beatae explicabo odio?</p>
+    </div>
+
+</body>
+
+</html>
