@@ -1,0 +1,32 @@
+1) To access the element which is belong to which group we use 
+   document.firstElementChild.lastElementChild.................
+
+2)TO access the element by Id/class we use 
+    document.getElementBYclassname or document.getElementById
+
+3) We  use querySelector to change the behavior of the element 
+    document.querySelector("class/id name or selector name" ) 
+
+4) To change the value of the element we use 
+    document.innerHTMl = 'value'
+
+5)We have to write  html in js  with the help of '' or "" comma then the interpreter threat as html
+  code otherwise it treat as a js code and give error.
+
+6) We use getattribute to get the data of the tag and setattribute to change the value of the specific tag 
+  document.querySelector("").getattribute("tag name");
+  document.querySelector("").setetattribute("which tag" , "whom tag");
+
+7)example -  current =  www.google.com  
+  document.querySelector("").setetattribute("href" , "www.youtube.com");
+  now its change to www.youtube.com;
+
+8)this is for many class with same name 
+    onst nodeList = document.querySelectorAll(".example");
+    for (let i = 0; i < nodeList.length; i++) {
+         nodeList[i].style.backgroundColor = "red";
+    }
+9) .style.changeANythingyouwantincss = "value";
+
+10)You can use the add() method to add a class to the classList property.
+    element.classList.add("mystyle");
