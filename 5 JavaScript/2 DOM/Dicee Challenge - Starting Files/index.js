@@ -1,24 +1,24 @@
-var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
-var randomSource1 = "./images/dice" + randomNumber1 + ".png";
+var random1 = Math.floor(Math.random()*6)+1;
+var randomdir1 = "./images/dice"+random1+".png";
+var value1 = document.querySelectorAll('img')[0];
 
-var value1 = document.querySelectorAll("img")[0];
-value1.setAttribute("src",randomSource1);
+value1.setAttribute('src',randomdir1);
 
-var randomNumber2 = Math.floor(Math.random()*6)+1;
+var random2 = Math.floor(Math.random()*6)+1;
+var randomdir2 = "./images/dice"+random2+".png";
+var value2 = document.querySelectorAll('img')[1];
 
-var randomSource2 =  "./images/dice"+randomNumber2+".png";
+value2.setAttribute('src',randomdir2);
 
-var value2 = document.querySelectorAll("img")[1];
-value2.setAttribute("src",randomSource2);
-
-if(randomNumber1>randomNumber2){
-    document.querySelector("h1").innerHTML = "Player1 wins !";
+if(random1>random2){
+    document.querySelector('h1').innerHTML ="Player1 Wins";
 }
-else if(randomNumber1<randomNumber2){
-    document.querySelector("h1").innerHTML = "Player2 wins !";
-
+else if (random2>random1){
+    document.querySelector('h1').innerHTML = "Player2 Wins";
 }
 else{
-    document.querySelector("h1").innerHTML = "Match Draw "
+    document.querySelector('h1').innerHTML="Draw"
 }
+
+
