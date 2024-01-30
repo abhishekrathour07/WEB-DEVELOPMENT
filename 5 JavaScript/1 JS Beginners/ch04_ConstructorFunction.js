@@ -6,6 +6,7 @@ function StudentData(name, age, dept, mobileNo) {
 
 }
 
-var s1 = new StudentData('Abhishek',20,'BCA',9334824703);
+var s1 = new StudentData('Abhishek', 20, 'BCA', 9334824703);
 console.log(s1.name);
 console.log(s1.mobileNo);
+
