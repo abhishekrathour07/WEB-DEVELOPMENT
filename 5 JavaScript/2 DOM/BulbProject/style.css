@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background:linear-gradient(black,rgb(166, 152, 152),black) ;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: rgb(6, 71, 144);
+    font-family: cursive;
+    font-size: 400%;
+    font-weight: 700;
+    margin-left: 10px;
+    text-shadow: 3px 2px 5px red;
+
+}
+img {
+    height: 350px;
+    width: auto;
+}
+.ispress {
+    margin-top: 10px;
+    height: 50px;
+    width: 15%;
+    border-radius: 14px;
+    background-color: rgb(6, 71, 144);
+    border: 1px solid rgb(255, 255, 255);
+
+}

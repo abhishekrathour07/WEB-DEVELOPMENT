@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+<body>
+<h1 class="title">Bulb Instruction</h1>
+<img id="myImage" src="./pic_bulboff.gif" >
+
+<button  class="ispress" onclick="light(1)">Light On</button>
+<button class="ispress"  onclick="light(0)">Light Off</button>
+
+<script>
+    function light(value) {
+      var pic;
+      if (value == 0) {
+        pic = "./pic_bulboff.gif"
+        document.getElementsByTagName('body')[0].style.background = "linear-gradient(black,rgb(166, 152, 152),black)";
+      } else {
+        pic = "./pic_bulbon.gif";
+        document.getElementsByTagName('body')[0].style.background = " linear-gradient(orange,rgb(245, 237, 124),orange)";
+       
+      }
+      document.getElementById('myImage').src = pic;
+    }
+    </script>
+
+</body>
+</html>
+
