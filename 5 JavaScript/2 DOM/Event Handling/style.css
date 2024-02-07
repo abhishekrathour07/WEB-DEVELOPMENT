@@ -1,0 +1,32 @@
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.btn{
+    height: 40px;
+    width: 10%;
+    background-color: red;
+    border-radius: 10px ;
+    border: 1px  solid white;
+    margin-top: 10px;
+    font-weight: 700;
+}
+img{
+    height: 60%;
+    width: 50%;
+    border-radius: 18px;
+}

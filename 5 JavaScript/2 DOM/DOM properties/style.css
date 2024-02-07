@@ -1,0 +1,26 @@
+body{
+    background-color: pink;
+    height: 100vh;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+#heading{
+    font-size: 40px;
+    color: blueviolet;
+    text-shadow: 5px 3px 5px rgb(23, 23, 85);
+}
+
+p{
+    color: white;
+    font-size: 24px;
+}
+.btn{
+    background-color: blueviolet;
+    border-radius: 6px;
+    height: 40px;
+    border: none;
+}
+.classh3{
+    background-color: cadetblue;
+}
