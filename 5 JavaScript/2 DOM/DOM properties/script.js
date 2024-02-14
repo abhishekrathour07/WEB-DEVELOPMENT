@@ -13,7 +13,7 @@ let h3 = document.querySelector("h3");
 h3.innerHTML = "We Are Learning Basic Js If you want to learn more Explore By Yourself";
 h3.style.color="purple";
 
-h3.classList.add("classh3");
+h3.classList.add("classh3"); 
 
 // to remove element 
 // h3.remove()

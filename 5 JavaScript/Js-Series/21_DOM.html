@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;"">
+    
+   
+   
+   
+   
+   <script>
+        let ul = document.createElement('ul');
+        ul.innerHTML = "List of language";
+        document.body.prepend(ul);
+       ul.setAttribute('class',"language");
+      
+       function addLang(language){
+        // let lang = document.querySelector('.language')
+        let li = document.createElement('li')
+        li.innerHTML = language;
+        ul.append(li);
+       }
+
+
+       addLang("javaScript");
+       addLang("python");
+       addLang("Java");
+       addLang("C language")
+
+
+ let lang = document.querySelectorAll('li')[0];
+      lang.style.color = 'red';
+
+
+ let div2 = document.createElement('div');
+  ul.before(div2);
+  div2.innerHTML = '<h1>DOM Manipulation in Js</h1>';
+  
+ let h1 = document.querySelector("h1");
+ h1.style.backgroundColor = "green"
+ h1.style.padding = '12px'
+ h1.style.borderRadius = '12px'
+ h1.style.display = 'inline-block'
+
+    </script>
+</body>
+
+
+</html>
