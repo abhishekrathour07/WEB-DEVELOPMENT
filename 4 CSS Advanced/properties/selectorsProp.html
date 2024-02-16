@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        body{
+            color: white;
+            background-color: hotpink;
+        }
+
+        h1::first-letter{
+            color: green;
+        }
+        
+        button:active{
+            color: rgb(229, 229, 229);
+            background-color: black;
+        }
+      /* div:nth-of-type(2){
+        background-color: red;
+      } */
+      div:nth-of-type(2n){
+        background-color: green;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="first">
+  <h1>Selectors In CSS</h1>
+  <input type="checkbox">Are you Best.?
+  
+    </div>
+    <div class="second">
+        <button >click me</button>
+    </div>
+    <div class="third">
+        This is div3
+
+    </div>
+    <div class="fourth">
+        This is div4
+
+    </div>
+    <div class="fifth">
+        This is div5
+
+    </div>
+
+
+</body>
+</html>
