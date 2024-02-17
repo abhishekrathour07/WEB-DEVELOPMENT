@@ -20,6 +20,7 @@
        ul.setAttribute('class',"language");
       
        function addLang(language){
+        // we use a global scope we can do like this also..
         // let lang = document.querySelector('.language')
         let li = document.createElement('li')
         li.innerHTML = language;
@@ -46,6 +47,15 @@
  h1.style.padding = '12px'
  h1.style.borderRadius = '12px'
  h1.style.display = 'inline-block'
+
+
+//  we can do like this also
+    // const div = document.createElement('div')
+    //   div.className = "main"
+    // div.id = 'divone'
+   // const addText = document.createTextNode("Chai aur code")
+   // div.appendChild(addText)
+   // document.body.appendChild(div)
 
     </script>
 </body>
