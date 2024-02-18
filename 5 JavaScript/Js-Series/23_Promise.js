@@ -1,4 +1,4 @@
-let promiseOne  = new Promise(function(resolve,reject){
+let promiseOne  = new Promise((resolve,reject)=>{
     setTimeout( function()  {
         console.log("Async task is begin");
         resolve()

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <style>
+        .btn {
+            height: 50px;
+            width: 200px;
+            background-color: red;
+            color: white;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn" id="btn1">submit</button>
+</body>
+
+<script>
+    let btn = document.querySelector(".btn");
+    let btnclick =true;
+    btn.addEventListener("click", function (e) {
+        console.log(e);
+        console.log(e.target);
+        console.log(e.target.id);
+        console.log(e.target.className);
+        // with the help of e we can get all the prototype avilable in event like clientX ,clientY,target ,className,nodeName And many more.
+       
+        if (btnclick) {
+            document.body.style.backgroundColor = "#212121"
+            btnclick = false
+        }
+        else {
+            document.body.style.backgroundColor = "#fff"
+            btnclick = true;
+
+        }
+
+    })
+</script>
+
+</html>
