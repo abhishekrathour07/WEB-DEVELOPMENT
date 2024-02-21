@@ -15,14 +15,14 @@ const user = {
 
 // console.log(this);
 
-// function chai(){
-//     let username = "hitesh"
+// function hello(){
+//     let username = "abhisheks"
 //     console.log(this.username);
 // }
 
-// chai()
+// hello()
 
-// const chai = function () {
+// const hello = function () {
 //     let username = "hitesh"
 //     console.log(this.username);
 // }

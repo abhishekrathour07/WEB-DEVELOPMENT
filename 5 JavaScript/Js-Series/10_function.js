@@ -40,7 +40,7 @@ function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+console.log(calculateCartPrice(200, 400, 500, 2000))
 
 const user = {
     username: "ABHISHEK",
@@ -83,7 +83,8 @@ function addone(num){
 
 
 
-addTwo(5)
+// addTwo(5) ---error bcz it only return the reference
 const addTwo = function(num){
     return num + 2
 }
+console.log(addTwo(5));

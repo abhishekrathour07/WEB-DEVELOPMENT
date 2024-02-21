@@ -20,7 +20,7 @@ for (const charcter of str) {
 
 
 
-// ***************We can iterate like this but this is not a good way to oterate the object .To iterate the object we use for in loop***************
+// ***************We can iterate like this but this is not a good way to oterate the object .***************
 
 // const obj = {
 //     name:"Abhishek",

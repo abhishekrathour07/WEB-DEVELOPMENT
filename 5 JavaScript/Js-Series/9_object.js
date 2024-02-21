@@ -1,6 +1,9 @@
 // singleton
 // Object.create
 // let obj = new object("hello")
+// console.log(obj);
+
+
 // object literals
 
 const mySym = Symbol("key1")
@@ -17,15 +20,15 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+console.log(JsUser.email)
+console.log(JsUser["email"])
+console.log(JsUser["full name"])
+console.log(JsUser[mySym])
 
-JsUser.email = "abhi@chatgpt.com"
+// JsUser.email = "abhi@chatgpt.com"
 // Object.freeze(JsUser)
 JsUser.email = "abhi@microsoft.com"
-// console.log(JsUser);
+console.log(JsUser);
 
 JsUser.greeting = function(){
     console.log("Hello JS user");
@@ -34,9 +37,9 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
-
+JsUser.greeting();
+JsUser.greetingTwo();
+// console.log(JsUser.greeting()); ==> return the value but also return the undefined value
 // const tinderUser = new Object()
 const tinderUser = {}
 
@@ -66,7 +69,7 @@ const obj4 = {5: "a", 6: "b"}
 // const obj3 = Object.assign({}, obj1, obj2, obj4)
 
 const obj3 = {...obj1, ...obj2}
-// console.log(obj3);
+console.log(obj3);
 
 
 const users = [
