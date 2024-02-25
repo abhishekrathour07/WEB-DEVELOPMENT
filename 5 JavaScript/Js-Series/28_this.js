@@ -1,4 +1,3 @@
-// simple function 
 
 function detail(name, id) {
     console.log(id);
