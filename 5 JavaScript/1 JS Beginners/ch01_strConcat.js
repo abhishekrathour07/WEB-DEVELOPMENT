@@ -1,3 +1,4 @@
+ const prompt = require("prompt-sync")();
  let str1 = "Hello";
  let str2 = ", This is javascript";
  console.log(str1+" " +str2);

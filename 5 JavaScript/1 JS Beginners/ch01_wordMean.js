@@ -5,3 +5,4 @@ const wordMeaning ={
     d:"dog",
 };
 console.log(wordMeaning);
+console.log(wordMeaning.c);

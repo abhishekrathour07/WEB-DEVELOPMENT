@@ -14,7 +14,7 @@
             case 'green':
                 document.body.style.backgroundColor = e.target.id;
                 break;
-            case 'violet':
+            case 'violet ':
                 document.body.style.backgroundColor = e.target.id;
                 break;
             case 'orange':

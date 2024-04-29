@@ -3,7 +3,7 @@ const prompt = require("prompt-sync")();
 var invitationList = ["yogi adityanath", "Modi ji", "Virat Kohli", "Rohit sherma", "Ambani", "Amitabh bacchan"];
 var name = prompt("Enter youir name  to check : ");
 
-if (name = invitationList) {
+if (name == invitationList) {
     console.log("Welcome you are invited");
 }
 else {
