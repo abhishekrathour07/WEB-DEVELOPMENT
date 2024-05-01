@@ -1,0 +1,17 @@
+let and const: ES6 introduced let and const for declaring variables, providing block-scoped variables (let) and constants (const). In ES5, variables were typically declared using var, which has function-level scope.
+
+Arrow Functions: ES6 introduced arrow function syntax (=>), providing a more concise way to define functions compared to the traditional function keyword.
+
+
+Template Literals: ES6 introduced template literals, allowing multi-line strings and string interpolation using backticks ( ``) instead of single or double quotes
+
+Classes: ES6 introduced class syntax, allowing developers to define classes and create objects using a more familiar syntax for those coming from class-based languages like Java or C++.
+
+
+Modules: ES6 introduced native support for modules, allowing developers to define modules in separate files and export/import functionality between them.
+
+Default Parameters: ES6 allows function parameters to have default values, which are used if the argument is not provided when the function is called.
+
+Rest Parameters and Spread Syntax: ES6 introduced the rest parameter (...) and spread syntax (...), which allow functions to accept a variable number of arguments and spread arrays into individual elements, respectively.
+
+Promises: While not entirely new to ES6, promises were standardized in ES6, providing a more structured way to handle asynchronous operations compared to callbacks.

@@ -7,7 +7,7 @@ console.log(date.toLocaleTimeString());
 
 // Timestamp
 
-console.log(date.getDay());
+// console.log(date.getDay()); return as number
 console.log(date.getMonth()+1);
 console.log(date.getFullYear());
 console.log(date.getHours());

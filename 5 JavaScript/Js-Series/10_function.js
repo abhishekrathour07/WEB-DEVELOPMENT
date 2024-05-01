@@ -35,7 +35,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("abhi"))
 
 
-
+// rest parameter
 function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
@@ -83,7 +83,7 @@ function addone(num){
 
 
 
-// addTwo(5) ---error bcz it only return the reference
+ addTwo(5) //---error bcz it only return the reference
 const addTwo = function(num){
     return num + 2
 }

@@ -43,7 +43,7 @@ console.log(newflatArray);
 let array1 = [1, 2, 3, 4, 5];
 let array2 = ['a', 'b', 'c', 'd'];
 const result = array1.concat(array2);
-// or
+// or array spreading
 const newResult = [...array1, ...array2, ...arr];
 console.log(newResult);
 
