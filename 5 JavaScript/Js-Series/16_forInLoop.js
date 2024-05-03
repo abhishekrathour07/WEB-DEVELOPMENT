@@ -4,6 +4,7 @@ for (const key in arr) {
     console.log(` Index :- ${key} Values:- ${arr[key]}`);
 }
 
+// for in use for iterate the objects
 const obj = {
     name: "Rahul",
     loc: "Bihar",

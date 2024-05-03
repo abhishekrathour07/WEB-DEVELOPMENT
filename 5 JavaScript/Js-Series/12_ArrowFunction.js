@@ -1,3 +1,5 @@
+// Learning about this keyworrd
+
 const user = {
     username: "abhi",
     price: 999,
@@ -8,12 +10,11 @@ const user = {
     }
 
 }
+user.welcomeMessage()
+user.username = "sam"
+user.welcomeMessage()
 
-// user.welcomeMessage()
-// user.username = "sam"
-// user.welcomeMessage()
-
-// console.log(this);
+console.log(this);  
 
 // function hello(){
 //     let username = "abhisheks"
@@ -41,6 +42,7 @@ const chai =  () => {
 
 // const addTwo = (num1, num2) =>  num1 + num2
 
+// if we dont  write return we use arrow function like this 
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
 const addTwo = (num1, num2) => ({username: "abhishek"})
