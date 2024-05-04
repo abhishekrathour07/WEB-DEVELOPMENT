@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="color: white; background-color: #212121;">
-    <div class="main">
-        <h1 class="title"> hello Abhishek</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quas laboriosam id? Recusandae ex minus iusto aliquam harum? Nam, sapiente!</p>
-        <ol type="I" start="4">
-            <li>java</li>
-            <li>javaScript</li>
-        </ol>
-    </div>
+
+<body style="color: #fff; background-color: #212121;">
+
 </body>
+
+<script>
+
+    // For creating a div
+    function creatingDiv(name, inner, className, tag) {
+        name = document.createElement("div");
+        name.setAttribute("class", className);
+        name.innerHTML = `<${tag}> ${inner} </${tag}>`;
+        document.body.append(name);
+        name.style.textAlign = "center";
+        name.style.backgroundColor = "blueviolet"
+        name.style.borderRadius = "24px";
+        name.style.fontSize = "18px";
+    }
+    creatingDiv("div1", "Introduction of DOM ", "container", "h1");
+    // ?creating a paragraph
+    let div1 = document.querySelector(".container");
+
+    function creatingpara(name, inner) {
+        name = document.createElement("p");
+        name.innerHTML = inner
+        document.body.append(name);
+        name.style.marginTop = "12px"
+        name.style.textAlign = "center";
+        name.style.backgroundColor = "#F27BBD"
+        name.style.borderRadius = "12px";
+    }
+    creatingpara("para1", "The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of HTML or XML documents as a tree-like model where each node represents part of the document, such as elements, attributes, and text.")
+
+
+
+    creatingDiv("div1", " points to be Remember", "container2", "h2")
+    creatingpara("para2", "Tree Structure: The DOM represents an HTML or XML document as a hierarchical tree structure. Each node in the tree represents an object in the document, such as elements, attributes, or text.Nodes: Nodes are the individual objects in the DOM tree.There are different types of nodes, including element nodes, attribute nodes, text nodes, and more.Element Nodes: Element nodes represent HTML elements such as div>, p>, h1>, etc. They can have attributes and may contain child nodes, including other elements or text nodes.Attribute Nodes: Attribute nodes represent attributes of HTML elements, such as id, class, src, etc.")
+
+  
+
+
+</script>
+
 </html>
