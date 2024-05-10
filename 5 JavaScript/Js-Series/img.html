@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="/5 JavaScript/Drum Kit Starting Files/images/crash.png" alt="Image 1">
+      <img src="/5 JavaScript/Drum Kit Starting Files/images/kick.png" alt="Image 2">
+      <img src="/5 JavaScript/Drum Kit Starting Files/images/tom4.png" alt="Image 3">
+      <img src="/5 JavaScript/Drum Kit Starting Files/images/tom2.png" alt="Image 4">
+      <img src="/5 JavaScript/Drum Kit Starting Files/images/snare.png" alt="Image 5">
+    </div>
+    <button id="nextBtn">Next</button>
+    <button id="prevBtn">Prev</button>
+
+  </div>
+  <script>
+ 
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const carousel = document.querySelector('.carousel');
+
+let currentIndex = 0;
+
+prevBtn.addEventListener('click', () => {
+  moveCarousel(-1);
+});
+
+nextBtn.addEventListener('click', () => {
+  moveCarousel(1);
+});
+
+function moveCarousel(direction) {
+  const carouselWidth = carousel.offsetWidth;
+  const totalImages = carousel.children.length;
+
+  currentIndex = (currentIndex + direction + totalImages) % totalImages;
+  const displacement = -currentIndex * carouselWidth;
+
+  carousel.style.transform = `translateX(${displacement}px)`;
+}
+  </script>
+</body>
+</html>
+
+
+
+
+

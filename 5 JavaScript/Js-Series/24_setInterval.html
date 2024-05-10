@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: blueviolet;
+
+        }
+
+        .container {
+            width: 300px;
+            background-color: gold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+
+        }
+
+        .time {
+            color: white;
+            width: 120px;
+            text-align: center;
+            background-color: blueviolet;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Today's Time </h1>
+        <h2 class="time"></h2>
+    </div>
+    <script>
+        let time = document.querySelector(".time");
+        setInterval(() => {
+            let date = new Date()
+            time.innerHTML = date.toLocaleTimeString()
+        }, 1000)
+    </script>
+</body>
+
+</html>

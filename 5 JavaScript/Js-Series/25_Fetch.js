@@ -7,7 +7,8 @@ async function fetchData(){
 fetchData();
 
 // Fetching data through call back hell
-fetch("https://randomuser.me/api/").then((response)=>{
+fetch("https://randomuser.me/api/")
+.then((response)=>{
     return response.json();
 })
 .then((data)=>{
