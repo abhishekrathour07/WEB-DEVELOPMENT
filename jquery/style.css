@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #414141;
+}
+
+.container{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+.red{
+    color: red;
+    cursor: pointer;
+}
+.blue{
+    color: green;
+}
