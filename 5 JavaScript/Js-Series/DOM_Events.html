@@ -42,7 +42,7 @@
     
     document.getElementById('google').addEventListener('click',function(e){
         e.preventDefault();
-        e.stopPropagation()
+        e.stopPropagation();
         console.log("google clicked");
     }, false)
    
@@ -52,7 +52,7 @@
             console.log(element);
             element.addEventListener('click',function(e){
                      console.log(e.target.parentNode);
-                     e.target.parentNode.remove()
+                     e.target.parentNode.remove();
     })
 });
 
